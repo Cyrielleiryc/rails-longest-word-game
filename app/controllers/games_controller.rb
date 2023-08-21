@@ -14,6 +14,7 @@ class GamesController < ApplicationController
     @result = 0
     if word_validation(@guess, @grid) && word_english(@guess)
       @result = 3
+      session[:points].nil? ? session[:points] = @guess.size : session[:points] += @guess.size
     elsif word_validation(@guess, @grid)
       @result = 2
     else
@@ -21,7 +22,7 @@ class GamesController < ApplicationController
     end
     @result
   end
-  # results
+  # result
   # 1 => the word doesn't match the grid => LOSE
   # 2 => the word matches the grid but it's not an English word => LOSE
   # 3 => the word matches the grid and it's an English word => WIN

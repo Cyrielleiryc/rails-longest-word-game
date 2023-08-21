@@ -13,3 +13,4 @@
   <input name="letters" type="hidden" value="<%= @letters.join %>">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 </form>
+<p>Pour l'instant, vous avez <%= session[:points] %> points.</p>
