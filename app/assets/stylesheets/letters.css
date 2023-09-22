@@ -1,0 +1,23 @@
+#letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.letter {
+  width: 20px;
+  background-color: #e3ad2d;
+  text-align: center;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 1 1 1 rgba(0,0,0,0.2);
+  font-weight: 500;
+  color: white;
+}
+
+#total {
+  text-align: center;
+}

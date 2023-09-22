@@ -27,6 +27,8 @@ class GamesController < ApplicationController
   # 2 => the word matches the grid but it's not an English word => LOSE
   # 3 => the word matches the grid and it's an English word => WIN
 
+  private
+
   def word_validation(attempt, grid)
     word = attempt.upcase.chars.to_h { |letter| [letter, attempt.upcase.chars.count(letter)] }
     alphabet = ('A'..'Z').to_h { |letter| [letter, grid.chars.count(letter)] }

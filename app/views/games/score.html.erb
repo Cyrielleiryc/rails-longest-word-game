@@ -1,13 +1,14 @@
 <h1>Result</h1>
-<p>
 <% case @result %>
 <% when 1%>
-Sorry but <strong><%= @guess.upcase %></strong> can't be built out of <%= @grid.chars.join(', ') %>.
+<p>Sorry but <strong><%= @guess.upcase %></strong> can't be built out of <%= @grid.chars.join(', ') %>.</p>
+<p>Your total is still <span class="points"><%= session[:points] %></span> points.</p>
 <% when 2%>
-Sorry but <strong><%= @guess.upcase %></strong> does not seem to be a valid English word...
+<p>Sorry but <strong><%= @guess.upcase %></strong> does not seem to be a valid English word...</p>
+<p>Your total is still <span class="points"><%= session[:points] %></span> points.</p>
 <% when 3%>
-<strong>Congratulations!</strong> <%= @guess.upcase %> is a valid English word!
+<p><strong>Congratulations!</strong> <%= @guess.upcase %> is a valid English word!</p>
+<p>You win <%= @guess.size %> points.</p>
+<p>Now your total is <span class="points"><%= session[:points] %></span> points.</p>
 <% end %>
-</p>
-<p>You win <%= @guess.size %> points. Now your total is <%= session[:points] %> points.</p>
-<%= link_to "Play again", "new" %>
+<%= link_to "Play again", root_path %>

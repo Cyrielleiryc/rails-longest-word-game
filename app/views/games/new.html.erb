@@ -1,4 +1,5 @@
-<h1>New game</h1>
+<h1>LONGEST WORD</h1>
+<p>Try to find the longest english word possible with these letters: </p>
 <div id="letters">
   <% @letters.each do |letter| %>
     <div class="letter">
@@ -6,11 +7,10 @@
     </div>
   <% end %>
 </div>
-<p>What's the longest word you can find?</p>
 <form action="score" method="POST" data-turbo="false">
-  <input class="text-area" type="text" name="guess">
-  <input class="btn-grey" type="submit" value="Play">
+  <input class="text-area" type="text" name="guess" placeholder="Type the longest word you can find...">
+  <input class="btn-grey" type="submit" value="Submit">
   <input name="letters" type="hidden" value="<%= @letters.join %>">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 </form>
-<p>Pour l'instant, vous avez <%= session[:points] %> points.</p>
+<p id="total">Your total is <span class="points"><%= session[:points] %></span> points.</p>

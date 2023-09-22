@@ -1,0 +1,31 @@
+form {
+  display: flex;
+  border-bottom: 1px solid grey;
+  padding: 20px 0;
+}
+.text-area {
+  border: 1px solid rgba(0,0,0,0.2);
+  flex: 0 0 80%;
+  flex-grow: 1;
+}
+
+.btn-grey {
+  background-color: #FFC436;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.btn-grey:hover {
+  background-color: #d19f2a;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 174, 255);
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(0, 110, 255);
+}

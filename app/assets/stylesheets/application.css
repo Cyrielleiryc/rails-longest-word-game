@@ -1,66 +1,15 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-.container {
-  margin: 0 auto;
-  width: 80%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('container.css');
+@import url('form.css');
+@import url('letters.css');
+@import url('points.css');
+
+body {
+  background-color: #FFC436;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
 }
 
-#letters {
-  display: flex;
-  justify-content: space-between;
-}
-
-.letter {
-  width: 20px;
-  background-color: rgb(214, 150, 12);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 1 1 1 rgba(0,0,0,0.2);
-  font-weight: 500;
-  color: white;
-}
-
-form {
-  display: flex;
-  /* height: 30px; */
-}
-.text-area {
-  border: 1px solid rgba(0,0,0,0.2);
-  flex: 0 0 80%;
-}
-
-.btn-grey {
-  background-color: rgb(228, 228, 228);
-  padding: 10px;
-  border: 1px solid rgba(0,0,0,0.2);
-}
-
-.btn-grey:hover {
-  background-color: rgb(173, 173, 173);
-}
-
-a {
-  text-decoration: none;
-  color: rgb(0, 174, 255);
-}
-
-a:hover {
-  text-decoration: underline;
-  color: rgb(0, 110, 255);
+h1, h2, h3, h4, h5 {
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
 }
