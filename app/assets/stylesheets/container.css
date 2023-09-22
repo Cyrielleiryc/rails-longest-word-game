@@ -5,6 +5,20 @@
   padding: 40px;
 }
 
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* poursuivre la responsive */
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 100%;
+    /* margin: 20px 0; */
+  }
+}
+
 .container h1 {
   border-bottom: 1px solid grey;
   padding-bottom: 20px;
