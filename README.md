@@ -1,24 +1,28 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Longest word
 
-Things you may want to cover:
+Fun game with one simple rule : try to find the longest English word possible using 10 random letters.
 
-* Ruby version
 
-* System dependencies
+## Features
 
-* Configuration
+- Responsive
+- Points stored in cookies
 
-* Database creation
 
-* Database initialization
+## Authors
 
-* How to run the test suite
+- [@cyrielleiryc](https://www.github.com/cyrielleiryc)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Screenshots
 
-* ...
+![First attempt](/app/assets/images/1.png)
+![Wrong word](/app/assets/images/2.png)
+![Second attempt](/app/assets/images/3.png)
+![Right word](/app/assets/images/4.png)
+
+
+## Demo
+
+https://www.loom.com/share/848d95f2a7144888ad038b04dd621cc7?sid=9c2bab09-d5a8-4754-a56e-e729ac7196a3
