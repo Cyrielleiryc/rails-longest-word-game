@@ -13,4 +13,6 @@
   <input name="letters" type="hidden" value="<%= @letters.join %>">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 </form>
-<p id="total">Your total is <span class="points"><%= session[:points] %></span> points.</p>
+<% unless session[:points].nil? %>
+  <p id="total">Your total is <span class="points"><%= session[:points] %></span> points.</p>
+<% end %>

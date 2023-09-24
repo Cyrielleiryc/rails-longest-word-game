@@ -15,7 +15,14 @@
 @media only screen and (max-width: 450px) {
   .container {
     width: 100%;
-    /* margin: 20px 0; */
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body {
+    padding: none;
+    margin: 0;
   }
 }
 
