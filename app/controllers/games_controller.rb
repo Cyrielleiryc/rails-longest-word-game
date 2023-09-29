@@ -30,13 +30,13 @@ class GamesController < ApplicationController
   private
 
   def word_validation(attempt, grid)
-    word = attempt.upcase.chars.to_h { |letter| [letter, attempt.upcase.chars.count(letter)] }
+    word = attempt.strip.upcase.chars.to_h { |letter| [letter, attempt.upcase.chars.count(letter)] }
     alphabet = ('A'..'Z').to_h { |letter| [letter, grid.chars.count(letter)] }
     word.all? { |letter, number| number <= alphabet[letter] }
   end
 
   def word_english(attempt)
-    url = "https://wagon-dictionary.herokuapp.com/#{attempt}"
+    url = "https://wagon-dictionary.herokuapp.com/#{attempt.strip}"
     in_dictionary = JSON.parse(URI.open(url).read)
     in_dictionary['found']
   end
